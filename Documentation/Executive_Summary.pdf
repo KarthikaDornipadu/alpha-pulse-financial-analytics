@@ -1,0 +1,9 @@
+AlphaPulse: Investment Risk & Volatility Monitor
+AlphaPulse is a portfolio analytics solution developed to provide a comprehensive view of market risk and asset behavior for a multi-stock investment portfolio.
+The project focuses on transforming raw financial data into actionable insights using quantitative risk metrics and visual analytics.
+Historical stock price data was collected and cleaned, followed by the computation of key financial indicators such as daily returns, portfolio-level returns, and rolling volatility.
+Prices were normalized to a base value to enable meaningful comparison across assets with different price scales, allowing clear visualization of relative performance trends.
+To assess diversification and interdependencies between assets, a correlation matrix was generated and visualized as a heatmap, highlighting positive and negative relationships within the portfolio. 
+This enables better allocation decisions and risk mitigation strategies.
+A Monte Carlo simulation framework was implemented to model thousands of potential future portfolio paths based on historical return distributions. This probabilistic approach provides a forward-looking view of uncertainty and potential outcomes, supporting risk-aware decision-making.
+The final output was integrated into an interactive Tableau dashboard, enabling dynamic exploration of price trends, volatility patterns, correlations, and simulated portfolio performance. The dashboard serves as a decision-support tool for understanding portfolio risk exposure and improving investment strategy.
