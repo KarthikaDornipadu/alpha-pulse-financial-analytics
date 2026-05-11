@@ -1,0 +1,2055 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='clean_volume' inline='true' name='federated.1deoz4f0nzzvbg19hg0t903xvzdc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_volume' name='textscan.0eze3wq03vjfkn1drtlk60nkeuyn'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='clean_volume.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Aapl]' />
+            <value name='[Amzn]' />
+            <value name='[Goog]' />
+            <value name='[JPM]' />
+            <value name='[KO]' />
+            <value name='[Msft]' />
+            <value name='[Nvda]' />
+            <value name='[PFE]' />
+            <value name='[Tsla]' />
+            <value name='[XOM]' />
+            <value name='[^Gspc]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[clean_volume.csv].[AAPL]' />
+              <field name='[clean_volume.csv].[AMZN]' />
+              <field name='[clean_volume.csv].[GOOG]' />
+              <field name='[clean_volume.csv].[JPM]' />
+              <field name='[clean_volume.csv].[KO]' />
+              <field name='[clean_volume.csv].[MSFT]' />
+              <field name='[clean_volume.csv].[NVDA]' />
+              <field name='[clean_volume.csv].[PFE]' />
+              <field name='[clean_volume.csv].[TSLA]' />
+              <field name='[clean_volume.csv].[XOM]' />
+              <field name='[clean_volume.csv].[^GSPC]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0eze3wq03vjfkn1drtlk60nkeuyn' name='clean_volume.csv' table='[clean_volume#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='integer' name='AAPL' ordinal='1' />
+              <column datatype='integer' name='AMZN' ordinal='2' />
+              <column datatype='integer' name='GOOG' ordinal='3' />
+              <column datatype='integer' name='JPM' ordinal='4' />
+              <column datatype='integer' name='KO' ordinal='5' />
+              <column datatype='integer' name='MSFT' ordinal='6' />
+              <column datatype='integer' name='NVDA' ordinal='7' />
+              <column datatype='integer' name='PFE' ordinal='8' />
+              <column datatype='integer' name='TSLA' ordinal='9' />
+              <column datatype='integer' name='XOM' ordinal='10' />
+              <column datatype='integer' name='^GSPC' ordinal='11' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_volume.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[clean_volume.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_volume.csv_4A8B730DAF86440A83F80EBE78C71460]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_volume.csv_4A8B730DAF86440A83F80EBE78C71460]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_volume.csv_4A8B730DAF86440A83F80EBE78C71460]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='volume' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='clean_volume.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_volume.csv_4A8B730DAF86440A83F80EBE78C71460]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_volume.csv' id='clean_volume.csv_4A8B730DAF86440A83F80EBE78C71460'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Aapl]' />
+                  <value name='[Amzn]' />
+                  <value name='[Goog]' />
+                  <value name='[JPM]' />
+                  <value name='[KO]' />
+                  <value name='[Msft]' />
+                  <value name='[Nvda]' />
+                  <value name='[PFE]' />
+                  <value name='[Tsla]' />
+                  <value name='[XOM]' />
+                  <value name='[^Gspc]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[clean_volume.csv].[AAPL]' />
+                    <field name='[clean_volume.csv].[AMZN]' />
+                    <field name='[clean_volume.csv].[GOOG]' />
+                    <field name='[clean_volume.csv].[JPM]' />
+                    <field name='[clean_volume.csv].[KO]' />
+                    <field name='[clean_volume.csv].[MSFT]' />
+                    <field name='[clean_volume.csv].[NVDA]' />
+                    <field name='[clean_volume.csv].[PFE]' />
+                    <field name='[clean_volume.csv].[TSLA]' />
+                    <field name='[clean_volume.csv].[XOM]' />
+                    <field name='[clean_volume.csv].[^GSPC]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0eze3wq03vjfkn1drtlk60nkeuyn' name='clean_volume.csv' table='[clean_volume#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='integer' name='AAPL' ordinal='1' />
+                    <column datatype='integer' name='AMZN' ordinal='2' />
+                    <column datatype='integer' name='GOOG' ordinal='3' />
+                    <column datatype='integer' name='JPM' ordinal='4' />
+                    <column datatype='integer' name='KO' ordinal='5' />
+                    <column datatype='integer' name='MSFT' ordinal='6' />
+                    <column datatype='integer' name='NVDA' ordinal='7' />
+                    <column datatype='integer' name='PFE' ordinal='8' />
+                    <column datatype='integer' name='TSLA' ordinal='9' />
+                    <column datatype='integer' name='XOM' ordinal='10' />
+                    <column datatype='integer' name='^GSPC' ordinal='11' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='clean_price' inline='true' name='federated.1jldkl70o5dp4413wnbdn01ynbt0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='portfolio' name='textscan.0n8t7tj0h03c4q110ne140y13vwe'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='portfolio.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Aapl]' />
+            <value name='[Amzn]' />
+            <value name='[Goog]' />
+            <value name='[JPM]' />
+            <value name='[KO]' />
+            <value name='[Msft]' />
+            <value name='[Nvda]' />
+            <value name='[PFE]' />
+            <value name='[Tsla]' />
+            <value name='[XOM]' />
+            <value name='[^Gspc]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[clean_prices.csv].[AAPL]' />
+              <field name='[clean_prices.csv].[AMZN]' />
+              <field name='[clean_prices.csv].[GOOG]' />
+              <field name='[clean_prices.csv].[JPM]' />
+              <field name='[clean_prices.csv].[KO]' />
+              <field name='[clean_prices.csv].[MSFT]' />
+              <field name='[clean_prices.csv].[NVDA]' />
+              <field name='[clean_prices.csv].[PFE]' />
+              <field name='[clean_prices.csv].[TSLA]' />
+              <field name='[clean_prices.csv].[XOM]' />
+              <field name='[clean_prices.csv].[^GSPC]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0n8t7tj0h03c4q110ne140y13vwe' name='clean_prices.csv' table='[clean_prices#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='real' name='AAPL' ordinal='1' />
+              <column datatype='real' name='AMZN' ordinal='2' />
+              <column datatype='real' name='GOOG' ordinal='3' />
+              <column datatype='real' name='JPM' ordinal='4' />
+              <column datatype='real' name='KO' ordinal='5' />
+              <column datatype='real' name='MSFT' ordinal='6' />
+              <column datatype='real' name='NVDA' ordinal='7' />
+              <column datatype='real' name='PFE' ordinal='8' />
+              <column datatype='real' name='TSLA' ordinal='9' />
+              <column datatype='real' name='XOM' ordinal='10' />
+              <column datatype='real' name='^GSPC' ordinal='11' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[clean_prices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_prices.csv_C8B64D3D965D4D37BD35724EC001C206]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_prices.csv_C8B64D3D965D4D37BD35724EC001C206]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_prices.csv_C8B64D3D965D4D37BD35724EC001C206]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Prices' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='clean_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_prices.csv_C8B64D3D965D4D37BD35724EC001C206]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_prices.csv' id='clean_prices.csv_C8B64D3D965D4D37BD35724EC001C206'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Aapl]' />
+                  <value name='[Amzn]' />
+                  <value name='[Goog]' />
+                  <value name='[JPM]' />
+                  <value name='[KO]' />
+                  <value name='[Msft]' />
+                  <value name='[Nvda]' />
+                  <value name='[PFE]' />
+                  <value name='[Tsla]' />
+                  <value name='[XOM]' />
+                  <value name='[^Gspc]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[clean_prices.csv].[AAPL]' />
+                    <field name='[clean_prices.csv].[AMZN]' />
+                    <field name='[clean_prices.csv].[GOOG]' />
+                    <field name='[clean_prices.csv].[JPM]' />
+                    <field name='[clean_prices.csv].[KO]' />
+                    <field name='[clean_prices.csv].[MSFT]' />
+                    <field name='[clean_prices.csv].[NVDA]' />
+                    <field name='[clean_prices.csv].[PFE]' />
+                    <field name='[clean_prices.csv].[TSLA]' />
+                    <field name='[clean_prices.csv].[XOM]' />
+                    <field name='[clean_prices.csv].[^GSPC]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0n8t7tj0h03c4q110ne140y13vwe' name='clean_prices.csv' table='[clean_prices#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='real' name='AAPL' ordinal='1' />
+                    <column datatype='real' name='AMZN' ordinal='2' />
+                    <column datatype='real' name='GOOG' ordinal='3' />
+                    <column datatype='real' name='JPM' ordinal='4' />
+                    <column datatype='real' name='KO' ordinal='5' />
+                    <column datatype='real' name='MSFT' ordinal='6' />
+                    <column datatype='real' name='NVDA' ordinal='7' />
+                    <column datatype='real' name='PFE' ordinal='8' />
+                    <column datatype='real' name='TSLA' ordinal='9' />
+                    <column datatype='real' name='XOM' ordinal='10' />
+                    <column datatype='real' name='^GSPC' ordinal='11' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='daily_returns' inline='true' name='federated.0w264kg10j8t3k10yn3a01ec32qw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='daily_returns' name='textscan.1rtyzw41x8wcid1e3seps1qn10mu'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='daily_returns.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation name='Pivot' type='pivot'>
+            <columns>
+              <column datatype='string' name='Pivot Field Names' />
+              <column datatype='real' name='Pivot Field Values' />
+            </columns>
+            <tag name='Pivot Field Names'>
+              <value name='[Aapl]' />
+              <value name='[Amzn]' />
+              <value name='[Goog]' />
+              <value name='[JPM]' />
+              <value name='[KO]' />
+              <value name='[Msft]' />
+              <value name='[Nvda]' />
+              <value name='[PFE]' />
+              <value name='[Tsla]' />
+              <value name='[XOM]' />
+              <value name='[^Gspc]' />
+            </tag>
+            <groups>
+              <group name='Pivot Field Values'>
+                <field name='[daily_returns.csv].[AAPL]' />
+                <field name='[daily_returns.csv].[AMZN]' />
+                <field name='[daily_returns.csv].[GOOG]' />
+                <field name='[daily_returns.csv].[JPM]' />
+                <field name='[daily_returns.csv].[KO]' />
+                <field name='[daily_returns.csv].[MSFT]' />
+                <field name='[daily_returns.csv].[NVDA]' />
+                <field name='[daily_returns.csv].[PFE]' />
+                <field name='[daily_returns.csv].[TSLA]' />
+                <field name='[daily_returns.csv].[XOM]' />
+                <field name='[daily_returns.csv].[^GSPC]' />
+              </group>
+            </groups>
+            <relation connection='textscan.1rtyzw41x8wcid1e3seps1qn10mu' name='daily_returns.csv' table='[daily_returns#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                <column datatype='date' name='Date' ordinal='0' />
+                <column datatype='real' name='AAPL' ordinal='1' />
+                <column datatype='real' name='AMZN' ordinal='2' />
+                <column datatype='real' name='GOOG' ordinal='3' />
+                <column datatype='real' name='JPM' ordinal='4' />
+                <column datatype='real' name='KO' ordinal='5' />
+                <column datatype='real' name='MSFT' ordinal='6' />
+                <column datatype='real' name='NVDA' ordinal='7' />
+                <column datatype='real' name='PFE' ordinal='8' />
+                <column datatype='real' name='TSLA' ordinal='9' />
+                <column datatype='real' name='XOM' ordinal='10' />
+                <column datatype='real' name='^GSPC' ordinal='11' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1rtyzw41x8wcid1e3seps1qn10mu' name='portfolio.csv' table='[portfolio#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Stocks' ordinal='1' />
+              <column datatype='real' name='weight' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[daily_returns.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[daily_returns.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stocks</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stocks]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>Stocks</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average_Return' datatype='real' name='[Calculation_0611120232415232]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Pivot Field Values])' />
+      </column>
+      <column caption='volatility' datatype='real' name='[Calculation_0611120232779777]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([Pivot Field Values])' />
+      </column>
+      <column caption='Annual return' datatype='real' name='[Calculation_1201559384633344]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(1+AVG([Pivot Field Values]))^252-1' />
+      </column>
+      <column caption='annual volatility' datatype='real' name='[Calculation_1201559385247745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STDEV([Pivot Field Values])*SQRT(252)' />
+      </column>
+      <column caption='sharpratio' datatype='real' name='[Calculation_1201559385534466]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Calculation_1201559384633344]-0.02)/[Calculation_1201559385247745]' />
+      </column>
+      <column caption='Stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='daily_return' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='Stocks1' datatype='string' name='[Stocks]' role='dimension' type='nominal' />
+      <column caption='daily_returns.csv' datatype='table' name='[__tableau_internal_object_id__].[daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783]' role='measure' type='quantitative' />
+      <column caption='portfolio.csv' datatype='table' name='[__tableau_internal_object_id__].[portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Values]' derivation='Avg' name='[avg:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weight]' derivation='Avg' name='[avg:weight:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0611120232415232]' derivation='User' name='[usr:Calculation_0611120232415232:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0611120232779777]' derivation='User' name='[usr:Calculation_0611120232779777:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;PFE&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;^Gspc&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JPM&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tsla&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;KO&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aapl&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Msft&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;XOM&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nvda&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amzn&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Goog&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[avg:weight:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[sum:Pivot Field Values:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232415232:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232779777:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[avg:Pivot Field Values:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='daily_returns.csv' id='daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Aapl]' />
+                  <value name='[Amzn]' />
+                  <value name='[Goog]' />
+                  <value name='[JPM]' />
+                  <value name='[KO]' />
+                  <value name='[Msft]' />
+                  <value name='[Nvda]' />
+                  <value name='[PFE]' />
+                  <value name='[Tsla]' />
+                  <value name='[XOM]' />
+                  <value name='[^Gspc]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[daily_returns.csv].[AAPL]' />
+                    <field name='[daily_returns.csv].[AMZN]' />
+                    <field name='[daily_returns.csv].[GOOG]' />
+                    <field name='[daily_returns.csv].[JPM]' />
+                    <field name='[daily_returns.csv].[KO]' />
+                    <field name='[daily_returns.csv].[MSFT]' />
+                    <field name='[daily_returns.csv].[NVDA]' />
+                    <field name='[daily_returns.csv].[PFE]' />
+                    <field name='[daily_returns.csv].[TSLA]' />
+                    <field name='[daily_returns.csv].[XOM]' />
+                    <field name='[daily_returns.csv].[^GSPC]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1rtyzw41x8wcid1e3seps1qn10mu' name='daily_returns.csv' table='[daily_returns#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='real' name='AAPL' ordinal='1' />
+                    <column datatype='real' name='AMZN' ordinal='2' />
+                    <column datatype='real' name='GOOG' ordinal='3' />
+                    <column datatype='real' name='JPM' ordinal='4' />
+                    <column datatype='real' name='KO' ordinal='5' />
+                    <column datatype='real' name='MSFT' ordinal='6' />
+                    <column datatype='real' name='NVDA' ordinal='7' />
+                    <column datatype='real' name='PFE' ordinal='8' />
+                    <column datatype='real' name='TSLA' ordinal='9' />
+                    <column datatype='real' name='XOM' ordinal='10' />
+                    <column datatype='real' name='^GSPC' ordinal='11' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='portfolio.csv' id='portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0'>
+            <properties context=''>
+              <relation connection='textscan.1rtyzw41x8wcid1e3seps1qn10mu' name='portfolio.csv' table='[portfolio#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Stocks' ordinal='1' />
+                  <column datatype='real' name='weight' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Pivot Field Names]' />
+              <expression op='[Stocks]' />
+            </expression>
+            <first-end-point object-id='daily_returns.csv_355C8AF490B14F94A56EBF0BE147C783' />
+            <second-end-point object-id='portfolio.csv_8401A9345A8243148F82F2C9AF36F0A0' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='correlation' inline='true' name='federated.1rbojb31r4lmet1e9xrwa1mkf0m6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='correlation' name='textscan.1qqvckf0pvqdm81fzeev91y14j6m'>
+            <connection class='textscan' directory='D:/sharmila/data new' filename='correlation.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qqvckf0pvqdm81fzeev91y14j6m' name='correlation.csv' table='[correlation#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Stock1' ordinal='1' />
+            <column datatype='string' name='Stock2' ordinal='2' />
+            <column datatype='real' name='Correlation' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[correlation.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[correlation.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[correlation.csv_BF6186409B4D44738CD798094681FB71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stock1]</local-name>
+            <parent-name>[correlation.csv]</parent-name>
+            <remote-alias>Stock1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[correlation.csv_BF6186409B4D44738CD798094681FB71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stock2]</local-name>
+            <parent-name>[correlation.csv]</parent-name>
+            <remote-alias>Stock2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[correlation.csv_BF6186409B4D44738CD798094681FB71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correlation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Correlation]</local-name>
+            <parent-name>[correlation.csv]</parent-name>
+            <remote-alias>Correlation</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[correlation.csv_BF6186409B4D44738CD798094681FB71]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='correlation.csv' datatype='table' name='[__tableau_internal_object_id__].[correlation.csv_BF6186409B4D44738CD798094681FB71]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='correlation.csv' id='correlation.csv_BF6186409B4D44738CD798094681FB71'>
+            <properties context=''>
+              <relation connection='textscan.1qqvckf0pvqdm81fzeev91y14j6m' name='correlation.csv' table='[correlation#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Stock1' ordinal='1' />
+                  <column datatype='string' name='Stock2' ordinal='2' />
+                  <column datatype='real' name='Correlation' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='portfolio' inline='true' name='federated.1uu2eet1p0trvs1dyz6fw1qnlmsf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='portfolio' name='textscan.0sj579t0qxrya11h2xymy1b6n2or'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='portfolio.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0sj579t0qxrya11h2xymy1b6n2or' name='portfolio.csv' table='[portfolio#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Stocks' ordinal='1' />
+            <column datatype='real' name='weight' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio.csv_B6087E5AA07942D5B163D2C9F23B2D17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stocks</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stocks]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>Stocks</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[portfolio.csv_B6087E5AA07942D5B163D2C9F23B2D17]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[portfolio.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio.csv_B6087E5AA07942D5B163D2C9F23B2D17]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='portfolio.csv' datatype='table' name='[__tableau_internal_object_id__].[portfolio.csv_B6087E5AA07942D5B163D2C9F23B2D17]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='portfolio.csv' id='portfolio.csv_B6087E5AA07942D5B163D2C9F23B2D17'>
+            <properties context=''>
+              <relation connection='textscan.0sj579t0qxrya11h2xymy1b6n2or' name='portfolio.csv' table='[portfolio#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Stocks' ordinal='1' />
+                  <column datatype='real' name='weight' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='portfolio_returns' inline='true' name='federated.0dor8e70t4scln1cawa521k0ox4e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='portfolio_returns' name='textscan.0slzdf80ltzwxo19p18ra1qgqj7a'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='portfolio_returns.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0slzdf80ltzwxo19p18ra1qgqj7a' name='portfolio_returns.csv' table='[portfolio_returns#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='0' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[portfolio_returns.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[portfolio_returns.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio_returns.csv_5F022750669647B5BF746F45209D7507]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[0]</local-name>
+            <parent-name>[portfolio_returns.csv]</parent-name>
+            <remote-alias>0</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[portfolio_returns.csv_5F022750669647B5BF746F45209D7507]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='portfolioreturns' datatype='real' name='[0]' role='measure' type='quantitative' />
+      <column caption='portfolio_returns.csv' datatype='table' name='[__tableau_internal_object_id__].[portfolio_returns.csv_5F022750669647B5BF746F45209D7507]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='portfolio_returns.csv' id='portfolio_returns.csv_5F022750669647B5BF746F45209D7507'>
+            <properties context=''>
+              <relation connection='textscan.0slzdf80ltzwxo19p18ra1qgqj7a' name='portfolio_returns.csv' table='[portfolio_returns#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='0' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='volatility' inline='true' name='federated.09b9ngv05p7k7n179kdgf0uc8faj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='volatility' name='textscan.1pzpmzf0rk1yrt1eugoe60o6apa3'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='volatility.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pzpmzf0rk1yrt1eugoe60o6apa3' name='volatility.csv' table='[volatility#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='0' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[volatility.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[volatility.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[volatility.csv_7AD2887C6FC84CE29D18ADAF3BD4E7E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[0]</local-name>
+            <parent-name>[volatility.csv]</parent-name>
+            <remote-alias>0</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[volatility.csv_7AD2887C6FC84CE29D18ADAF3BD4E7E9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='volatility' datatype='real' name='[0]' role='measure' type='quantitative' />
+      <column caption='volatility.csv' datatype='table' name='[__tableau_internal_object_id__].[volatility.csv_7AD2887C6FC84CE29D18ADAF3BD4E7E9]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='volatility.csv' id='volatility.csv_7AD2887C6FC84CE29D18ADAF3BD4E7E9'>
+            <properties context=''>
+              <relation connection='textscan.1pzpmzf0rk1yrt1eugoe60o6apa3' name='volatility.csv' table='[volatility#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='0' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monte_carlo_results' inline='true' name='federated.0d3uaku0sfkx9w1ads3qq1br82m5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monte_carlo_results' name='textscan.1dkkrg016gy41b11q7q6b08rizlk'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='monte_carlo_results.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dkkrg016gy41b11q7q6b08rizlk' name='monte_carlo_results.csv' table='[monte_carlo_results#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Final Value' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_results.csv_98503C2BBE6E4B33BA7B107253DD311F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Final Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Final Value]</local-name>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias>Final Value</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_results.csv_98503C2BBE6E4B33BA7B107253DD311F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='monte_carlo_results.csv' datatype='table' name='[__tableau_internal_object_id__].[monte_carlo_results.csv_98503C2BBE6E4B33BA7B107253DD311F]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='monte_carlo_results.csv' id='monte_carlo_results.csv_98503C2BBE6E4B33BA7B107253DD311F'>
+            <properties context=''>
+              <relation connection='textscan.1dkkrg016gy41b11q7q6b08rizlk' name='monte_carlo_results.csv' table='[monte_carlo_results#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='Final Value' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monte_carlo_long' inline='true' name='federated.0ne973s1rcu02615jt15u0tpee0z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monte_carlo_long' name='textscan.0azxtqq1x04a3l13lp36c086glpp'>
+            <connection class='textscan' directory='D:/sharmila/project 2/alpha-pulse-financial-analytics/Data' filename='monte_carlo_long.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0azxtqq1x04a3l13lp36c086glpp' name='monte_carlo_long.csv' table='[monte_carlo_long#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Day' ordinal='0' />
+              <column datatype='integer' name='Simulation' ordinal='1' />
+              <column datatype='real' name='Price' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0azxtqq1x04a3l13lp36c086glpp' name='monte_carlo_results.csv' table='[monte_carlo_results#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='real' name='Final Value' ordinal='1' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monte_carlo_long.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[monte_carlo_long.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Simulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Simulation]</local-name>
+            <parent-name>[monte_carlo_long.csv]</parent-name>
+            <remote-alias>Simulation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[monte_carlo_long.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_results.csv_EE0A75282B7B475CBDB035BEA6B5B6F6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Final Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Final Value]</local-name>
+            <parent-name>[monte_carlo_results.csv]</parent-name>
+            <remote-alias>Final Value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monte_carlo_results.csv_EE0A75282B7B475CBDB035BEA6B5B6F6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column caption='monte_carlo_long.csv' datatype='table' name='[__tableau_internal_object_id__].[monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13]' role='measure' type='quantitative' />
+      <column caption='monte_carlo_results.csv' datatype='table' name='[__tableau_internal_object_id__].[monte_carlo_results.csv_EE0A75282B7B475CBDB035BEA6B5B6F6]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='monte_carlo_long.csv' id='monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13'>
+            <properties context=''>
+              <relation connection='textscan.0azxtqq1x04a3l13lp36c086glpp' name='monte_carlo_long.csv' table='[monte_carlo_long#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Day' ordinal='0' />
+                  <column datatype='integer' name='Simulation' ordinal='1' />
+                  <column datatype='real' name='Price' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='monte_carlo_results.csv' id='monte_carlo_results.csv_EE0A75282B7B475CBDB035BEA6B5B6F6'>
+            <properties context=''>
+              <relation connection='textscan.0azxtqq1x04a3l13lp36c086glpp' name='monte_carlo_results.csv' table='[monte_carlo_results#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='Final Value' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Day]' />
+              <expression op='[F1]' />
+            </expression>
+            <first-end-point object-id='monte_carlo_long.csv_F5D9998782FE40858A5F4D9455311D13' />
+            <second-end-point object-id='monte_carlo_results.csv_EE0A75282B7B475CBDB035BEA6B5B6F6' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>Stock trend over year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_price' name='federated.1jldkl70o5dp4413wnbdn01ynbt0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jldkl70o5dp4413wnbdn01ynbt0'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Prices' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jldkl70o5dp4413wnbdn01ynbt0].[none:Pivot Field Names:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jldkl70o5dp4413wnbdn01ynbt0].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1jldkl70o5dp4413wnbdn01ynbt0].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B1EA69C1-56C5-42D1-A5E4-80F37F1C981A}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='18'>Volume over year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_volume' name='federated.1deoz4f0nzzvbg19hg0t903xvzdc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1deoz4f0nzzvbg19hg0t903xvzdc'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='volume' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1deoz4f0nzzvbg19hg0t903xvzdc].[yr:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1deoz4f0nzzvbg19hg0t903xvzdc].[sum:Pivot Field Values:qk]</rows>
+        <cols>([federated.1deoz4f0nzzvbg19hg0t903xvzdc].[none:Pivot Field Names:nk] / [federated.1deoz4f0nzzvbg19hg0t903xvzdc].[yr:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{A7A9BA11-601F-43A5-85E0-38B886C4166E}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monte_carlo_long' name='federated.0ne973s1rcu02615jt15u0tpee0z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ne973s1rcu02615jt15u0tpee0z'>
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ne973s1rcu02615jt15u0tpee0z].[sum:Price:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{685AC74A-CDDE-4B7E-89C2-EEB7414C7CCE}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>Daily returns over a year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daily_returns' name='federated.0w264kg10j8t3k10yn3a01ec32qw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w264kg10j8t3k10yn3a01ec32qw'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='daily_return' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year-Trunc' name='[tyr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[tyr:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0w264kg10j8t3k10yn3a01ec32qw].[sum:Pivot Field Values:qk]</rows>
+        <cols>([federated.0w264kg10j8t3k10yn3a01ec32qw].[none:Pivot Field Names:nk] / [federated.0w264kg10j8t3k10yn3a01ec32qw].[tyr:Date:ok])</cols>
+      </table>
+      <simple-id uuid='{D313C478-0A5A-42CB-A167-3305EE5CFFE8}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>Correlation of stocks </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='correlation' name='federated.1rbojb31r4lmet1e9xrwa1mkf0m6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rbojb31r4lmet1e9xrwa1mkf0m6'>
+            <column datatype='real' name='[Correlation]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Stock1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Stock2]' role='dimension' type='nominal' />
+            <column-instance column='[Stock1]' derivation='None' name='[none:Stock1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Stock2]' derivation='None' name='[none:Stock2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Correlation]' derivation='Sum' name='[sum:Correlation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[sum:Correlation:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[sum:Correlation:qk]' />
+              <text column='[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[sum:Correlation:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[none:Stock1:nk]</rows>
+        <cols>[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[none:Stock2:nk]</cols>
+      </table>
+      <simple-id uuid='{7297290A-1CCD-4B34-9B9E-1F1AF1492AD3}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>weight of stocks</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='portfolio' name='federated.1uu2eet1p0trvs1dyz6fw1qnlmsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uu2eet1p0trvs1dyz6fw1qnlmsf'>
+            <column datatype='string' name='[Stocks]' role='dimension' type='nominal' />
+            <column-instance column='[Stocks]' derivation='None' name='[none:Stocks:nk]' pivot='key' type='nominal' />
+            <column-instance column='[weight]' derivation='Sum' name='[sum:weight:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1uu2eet1p0trvs1dyz6fw1qnlmsf].[none:Stocks:nk]' />
+              <text column='[federated.1uu2eet1p0trvs1dyz6fw1qnlmsf].[sum:weight:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.813093900680542' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{69FD5ED2-937F-44F9-8DD9-2E64B6908C01}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman' fontsize='16'>portfolioreturns over month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='portfolio_returns' name='federated.0dor8e70t4scln1cawa521k0ox4e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0dor8e70t4scln1cawa521k0ox4e'>
+            <column caption='portfolioreturns' datatype='real' name='[0]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[0]' derivation='Avg' name='[avg:0:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0dor8e70t4scln1cawa521k0ox4e].[avg:0:qk]</rows>
+        <cols>[federated.0dor8e70t4scln1cawa521k0ox4e].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{06C32F20-951A-4D89-A68A-BA428CD55BBD}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>volatility over month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='volatility' name='federated.09b9ngv05p7k7n179kdgf0uc8faj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09b9ngv05p7k7n179kdgf0uc8faj'>
+            <column caption='volatility' datatype='real' name='[0]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[0]' derivation='Stdev' name='[std:0:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.09b9ngv05p7k7n179kdgf0uc8faj].[std:0:qk]</rows>
+        <cols>[federated.09b9ngv05p7k7n179kdgf0uc8faj].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{E69E070C-8AB2-4CED-8FDE-369337ED6D6F}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>Risk and Return </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daily_returns' name='federated.0w264kg10j8t3k10yn3a01ec32qw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w264kg10j8t3k10yn3a01ec32qw'>
+            <column caption='volatility' datatype='real' name='[Calculation_0611120232779777]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([Pivot Field Values])' />
+            </column>
+            <column caption='Stocks' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='daily_return' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Avg' name='[avg:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weight]' derivation='Avg' name='[avg:weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[weight]' derivation='Sum' name='[sum:weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0611120232779777]' derivation='User' name='[usr:Calculation_0611120232779777:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[avg:weight:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[avg:Pivot Field Values:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232779777:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]</column>
+            <column>[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232779777:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]' />
+              <size column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[sum:weight:qk]' />
+              <text column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w264kg10j8t3k10yn3a01ec32qw].[avg:Pivot Field Values:qk]</rows>
+        <cols>[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232779777:qk]</cols>
+      </table>
+      <simple-id uuid='{8A2C60EB-0103-4B8E-9726-AD59DB4B21BD}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Times New Roman'>KPI METRICS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daily_returns' name='federated.0w264kg10j8t3k10yn3a01ec32qw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w264kg10j8t3k10yn3a01ec32qw'>
+            <column caption='Average_Return' datatype='real' name='[Calculation_0611120232415232]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Pivot Field Values])' />
+            </column>
+            <column caption='Annual return' datatype='real' name='[Calculation_1201559384633344]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(1+AVG([Pivot Field Values]))^252-1' />
+            </column>
+            <column caption='annual volatility' datatype='real' name='[Calculation_1201559385247745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='STDEV([Pivot Field Values])*SQRT(252)' />
+            </column>
+            <column caption='sharpratio' datatype='real' name='[Calculation_1201559385534466]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_1201559384633344]-0.02)/[Calculation_1201559385247745]' />
+            </column>
+            <column caption='daily_return' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0611120232415232]' derivation='User' name='[usr:Calculation_0611120232415232:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1201559384633344]' derivation='User' name='[usr:Calculation_1201559384633344:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1201559385247745]' derivation='User' name='[usr:Calculation_1201559385247745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1201559385534466]' derivation='User' name='[usr:Calculation_1201559385534466:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_1201559384633344:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_0611120232415232:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_1201559385247745:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0w264kg10j8t3k10yn3a01ec32qw].[usr:Calculation_1201559385534466:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0w264kg10j8t3k10yn3a01ec32qw].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{76CFDAC5-26BF-40F3-8E07-F811DE172421}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='245'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1jldkl70o5dp4413wnbdn01ynbt0].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5ED4A0C6-A16C-4A40-B650-A5031B4AB9BB}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w264kg10j8t3k10yn3a01ec32qw].[tyr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{80C97DCB-1820-4B16-835A-5EF00B7B1D37}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rbojb31r4lmet1e9xrwa1mkf0m6].[sum:Correlation:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F904FBA7-2F21-454D-9682-64875CB5B2B5}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1uu2eet1p0trvs1dyz6fw1qnlmsf].[none:Stocks:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D158A55-3B0B-499A-A14E-F01799DB4B6C}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4CB8D04-2652-423B-85C9-1EAADF29F192}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AEA6081-42FD-4B88-BD3D-04AE346B7E9E}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w264kg10j8t3k10yn3a01ec32qw].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.0w264kg10j8t3k10yn3a01ec32qw].[sum:weight:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9A2F3F2-5759-4E58-839D-DFF7A1F4D9D1}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F75B9525-0F80-4EFF-9762-66C851F94C1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1deoz4f0nzzvbg19hg0t903xvzdc].[yr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{805E36F8-687C-4FFE-B985-077BF56D44EE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{43CA4DBC-82FD-4F13-AAF9-DED034443843}' />
+    </window>
+  </windows>
+</workbook>
