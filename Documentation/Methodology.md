@@ -59,3 +59,22 @@ Identifying high-risk vs low-risk stocks
 Understanding diversification effects
 Evaluating possible future portfolio performance
 👉 Insights support data-driven financial decision-making.
+WORKFLOW
+*PORTFOLIO ANALYSIS
+Stock Data Collection
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Daily Return Calculation
+        ↓
+Portfolio Weight Allocation
+        ↓
+Risk & Return Analysis
+        ↓
+Volatility & Sharpe Ratio
+        ↓
+Correlation Analysis
+        ↓
+Monte Carlo Simulation
+        ↓
+Dashboard Visualization
