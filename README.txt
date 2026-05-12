@@ -21,6 +21,8 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 
 * Python
 * NumPy
+* Matplotlib
+* seaborn
 * yfinance API
 * SQL
 * PowerBI
