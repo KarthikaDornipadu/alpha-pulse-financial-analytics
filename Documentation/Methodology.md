@@ -104,3 +104,14 @@ Measure Volatility
 Evaluate Sharpe Ratio
       ↓
 Portfolio Optimization
+
+*PORTFOLIO CONSTRUCTION
+Select Stocks
+      ↓
+Assign Portfolio Weights
+      ↓
+Calculate Portfolio Returns
+      ↓
+Measure Risk
+      ↓
+Optimize Portfolio
