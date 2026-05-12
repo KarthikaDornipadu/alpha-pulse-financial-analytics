@@ -23,6 +23,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 * NumPy
 * yfinance API
 * SQL
+* PowerBI
 * Tableau
 
 ---
@@ -32,7 +33,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 1. Collect stock data using yfinance
 2. Clean and preprocess the data
 3. Calculate daily returns
-4. Perform risk and volatility analysis
+4. Perform risk ,volatility analysis and calculated the annual return ,sharpratio.
 5. Run Monte Carlo simulation
 6. Visualize results in Tableau
 
@@ -43,7 +44,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 * Data → Raw and processed datasets
 * python → Analysis and simulation scripts
 * SQL → Database queries
-* Dashboard → Tableau files
+* Dashboard → Power bi and Tableau files
 * Documentation → Project reports
 
 ---
