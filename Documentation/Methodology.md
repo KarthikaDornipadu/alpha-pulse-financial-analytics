@@ -62,6 +62,7 @@ Evaluating possible future portfolio performance
 
 
 WORKFLOW
+
 *PORTFOLIO ANALYSIS
 Stock Data Collection
         ↓
