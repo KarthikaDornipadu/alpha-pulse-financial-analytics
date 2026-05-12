@@ -78,3 +78,16 @@ Correlation Analysis
 Monte Carlo Simulation
         ↓
 Dashboard Visualization
+
+*MONTECARLO STIMULATION
+Historical Stock Prices
+        ↓
+Calculate Daily Returns
+        ↓
+Estimate Mean & Volatility
+        ↓
+Generate Random Simulations
+        ↓
+Forecast Future Portfolio Prices
+        ↓
+Analyze Risk Scenarios
