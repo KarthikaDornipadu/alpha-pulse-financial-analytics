@@ -13,7 +13,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 * Monte Carlo simulation (10,000 runs)
 * Correlation heatmap between stocks
 * Rolling volatility (30-day)
-* Interactive Tableau dashboard
+* Interactive  Power BI and Tableau dashboard
 
 ---
 
@@ -35,7 +35,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 3. Calculate daily returns
 4. Perform risk ,volatility analysis and calculated the annual return ,sharpratio.
 5. Run Monte Carlo simulation
-6. Visualize results in Tableau
+6. Visualize results in Power Bi and Tableau
 
 ---
 
