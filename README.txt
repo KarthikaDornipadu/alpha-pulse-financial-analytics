@@ -51,7 +51,7 @@ AlphaPulse is a financial analytics project designed to monitor investment risk 
 
 ## 💡 Use Case
 
-This project helps investors and analysts understand portfolio risk, identify correlations between assets, and make data-driven investment decisions.
+This project helps investors and analysts understand portfolio risk,daily returns ,annual return and sharp ratio , identify correlations between assets, and make data-driven investment decisions.
 
 ---
 
